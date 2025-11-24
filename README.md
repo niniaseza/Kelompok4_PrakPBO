@@ -1,10 +1,11 @@
 # Digitala (Online Tech Store)
-
 Anggota Kelompok 4:
 1. M.Rayyanta Adha Barus (2308107010053)
 2. Teuku Al Jumanatul Ali (2408107010016)
 3. Muhammad Riskan Rajabi (2408107010110)
 4. Azira Kania (24080107010025)
+   
+DIGITALA adalah aplikasi berbasis Java yang dirancang untuk membantu pengelolaan toko elektronik secara lebih efisien. Sistem ini menyediakan fitur lengkap mulai dari pengelolaan produk, pencatatan transaksi, manajemen pengguna (admin & pelanggan), hingga berbagai metode pembayaran digital. DIGITALA dibuat sebagai proyek kolaborasi untuk menerapkan konsep Object-Oriented Programming (OOP) secara nyata dan terstruktur.
 
 ---
 ##  Fitur
