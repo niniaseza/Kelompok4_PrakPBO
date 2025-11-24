@@ -7,7 +7,14 @@ import java.util.Map;
 
 import app.pembayaran.Pembayaran;
 
+/**
+ * Kelas Transaksi merepresentasikan proses pembelian oleh pelanggan,
+ * menyimpan daftar item, total harga, status, dan metode pembayaran.
+ */
 public class Transaksi {
+     /**
+     * Membuat sebuah transaksi baru berdasarkan isi keranjang pelanggan.
+     */
     private String idTransaksi;
     private Pelanggan pelanggan;
     private HashMap<ProdukElektronik, Integer> items;
@@ -35,9 +42,12 @@ public class Transaksi {
     public double getTotal() { return total; }
 
     public void setStatus(String status) { this.status = status; }
-    public void setTanggal(Date tanggal) { this.tanggal = tanggal; } // ← TAMBAHKAN INI
+    public void setTanggal(Date tanggal) { this.tanggal = tanggal; } 
 
-    // saat transaksi diterima, kurangi stok barang
+     /**
+     * Mengurangi stok setiap produk sesuai quantity yang dibeli
+     * ketika transaksi diterima oleh admin.
+     */
     public void reduceStock() {
         for (Map.Entry<ProdukElektronik, Integer> e : items.entrySet()) {
             ProdukElektronik p = e.getKey();
@@ -46,6 +56,11 @@ public class Transaksi {
         }
     }
 
+     /**
+     * Mengembalikan detail transaksi dalam format tabel hias untuk ditampilkan ke console.
+     *
+     * @return string berformat berisi informasi transaksi
+     */
     @Override
     public String toString() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
@@ -75,6 +90,10 @@ public class Transaksi {
         return sb.toString();
     }
 
+     /**
+     * Menampilkan invoice ke console.
+     * (Digunakan saat pelanggan melihat riwayat transaksi.)
+     */
     public void printInvoice() {
         System.out.println("\n====== INVOICE ======");
         System.out.println("ID: " + idTransaksi);
