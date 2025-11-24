@@ -2,8 +2,8 @@
 
 Anggota Kelompok 4:
 1. M.Rayyanta Adha Barus (2308107010053)
-2. Teuku Al Jumanatul Ali (24081070100)
-3. Muhammad Riskan Rajabi (24081070100)
+2. Teuku Al Jumanatul Ali (2408107010016)
+3. Muhammad Riskan Rajabi (2408107010110)
 4. Azira Kania (24080107010025)
 
 ---
@@ -29,8 +29,9 @@ Anggota Kelompok 4:
 
 Pastikan Anda memiliki JDK (Java Development Kit) terinstal.
 
-### Menjalankan Mode GUI (Disarankan)
-Jalankan file `app/MainAppGUI.java`.
+### Menjalankan Kode
 ```bash
-javac app/MainAppGUI.java
-java app.MainAppGUI
+javac app/*.java app/models/*.java app/pembayaran/*.java app/exceptions/*.java
+java app.MainApp (CLI)
+java app.MainAppGUI (GUI)
+
