@@ -1,10 +1,20 @@
 package app.models;
 
+/**
+ * Kelas ProdukGeneric merupakan implementasi konkret dari ProdukElektronik.
+ * Digunakan untuk produk umum yang tidak memiliki spesifikasi khusus.
+ */
 public class ProdukGeneric extends ProdukElektronik {
-    
+    /**
+     * Membuat objek produk generik dengan atribut dasar produk elektronik.
+     */
     public ProdukGeneric(String id, String nama, double hargaBeli, double hargaJual, int stok, String deskripsi) {
         super(id, nama, hargaBeli, hargaJual, stok, deskripsi);
     }
+
+    /**
+     * Menampilkan detail spesifikasi produk secara sederhana di console.
+     */
 
     @Override
     public void displaySpesifikasi() {
