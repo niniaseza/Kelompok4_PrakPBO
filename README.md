@@ -25,10 +25,6 @@ Anggota Kelompok 4:
 * **Persistensi Data:** Data akun, produk, dan transaksi disimpan secara permanen dalam file `.txt` (Auto-save & Load).
 * **GUI & CLI:** Tersedia dalam dua mode antarmuka: Command Line Interface dan Graphical User Interface (Swing).
 
-##  How to Use
-
-Pastikan Anda memiliki JDK (Java Development Kit) terinstal.
-
 ### Menjalankan Kode
 ```bash
 javac app/*.java app/models/*.java app/pembayaran/*.java app/exceptions/*.java
