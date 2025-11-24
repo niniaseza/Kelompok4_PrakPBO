@@ -28,7 +28,7 @@ DIGITALA adalah aplikasi berbasis Java yang dirancang untuk membantu pengelolaan
 
 ### Menjalankan Kode
 ```bash
-javac app/*.java app/models/*.java app/pembayaran/*.java app/exceptions/*.java
+javac app/*.java app/models/*.java app/Pembayaran/*.java app/exceptions/*.java
 java app.MainApp (CLI)
 java app.MainAppGUI (GUI)
 
